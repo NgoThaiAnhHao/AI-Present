@@ -1,0 +1,331 @@
+body {
+    
+    background: #d4e4f3;
+    font-family: sans-serif;
+
+    h3::after {
+        content: " ";  
+        position: absolute;
+        top: 50%;  
+        left: 100%;  
+        margin-left: 10px; 
+        width: 900px;  
+        height: 1px;  
+        background-color: rgb(112, 112, 112);
+    }
+
+}
+
+.image img{         
+    width: 1000px;  
+    height: auto;  
+    display: block;
+    margin: 0 auto;
+    position: relative ;
+    
+}
+
+.image {                            /* Cắt ảnh */
+    clip-path: inset(35% 0 35% 0);  /* Top - Left - Right - Bottom */
+    position: relative;
+    top: -200px
+}
+
+.content {
+    position: relative;
+    top: -450px;
+
+        h1 {
+            color: #002147;
+            left: 160px;
+            position: relative;
+        }
+
+        p {
+            position: relative;
+            left: 160px;
+            background-color: #DDDDDD;
+            padding: 10px;
+            display: inline-block;
+            
+        }
+}
+
+.main { 
+    background-image: url(img2.webp);
+    background-repeat: no-repeat ;
+    background-position: right;
+    position: relative;
+    top: -400px;
+
+    h3 {
+        color: #0066cc;
+        position: relative;
+        left: 100px;
+        display: inline-block;
+        padding-right: 0px;
+    }
+
+    select {
+        color:#5e5d5d; /* Độ mờ */
+        padding: 5px; /* Khung chữ */
+        border-radius: 5px;
+    }
+
+}
+
+.center {
+    position: relative;
+    top: 20px;
+    left: 200px;
+    margin-bottom: 40px;
+
+    label {
+        width: 200px;
+    }
+    
+    select {
+        position: relative;   
+        width: 200px;
+    }
+
+    label, select {
+        margin-bottom: 20px;
+        margin-right: 100px;
+          
+    }
+
+    select:nth-of-type(2) {
+        margin-left: 5px;           /* Dịch sang phải 5px */
+    }
+    
+    
+}
+
+.center2 {
+    position: relative;
+    top: 20px;
+    left: 200px;
+    margin-bottom: 40px;
+
+    label {
+        width: 200px;
+    }
+    
+    select {
+        position: relative;   
+        width: 200px;
+        margin-left: -15px;
+    }
+
+    label, select {
+        margin-bottom: 20px;
+        margin-right: 100px;
+          
+    }
+
+    select:nth-of-type(2) {
+        margin-left: -10px;           
+    }
+}
+
+.center3 {
+    position: relative;
+    top: 20px;
+    left: 200px;
+    margin-bottom: 40px;
+
+    label {
+        width: 200px;
+    }
+    
+    label, input, select {
+        margin-bottom: 20px;
+        margin-right: 100px;
+    }
+
+    input {
+        width: 185px;
+        margin-left: -4px;
+        padding: 5px;
+        border-radius: 5px;
+        border-color: #DDDDDD;
+        
+    }
+
+    select {
+        width: 200px;
+        margin-left: 5px;
+    }
+
+    input::placeholder {
+        color: #5e5d5d;
+        
+    }
+
+    p, input {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+}
+
+.submit {
+    position: relative;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 250px;
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px; /* Bo tròn góc */
+}
+
+.submit:hover {
+    background-color: #0066cc;
+}
+
+.submit:active {
+    background-color: rgb(253, 96, 96);
+}
+
+.map {
+    position: relative;
+    top: -250px;  /* Kéo phần này lên 20px */
+
+    h1 {
+        color: #002147;
+        position: relative;
+        left: 160px;
+    }
+
+}
+
+.container {
+    margin-top: 50px;
+    h3, p {
+        position: relative;
+        left: 40px;
+    }
+    h3::after {
+        all: unset;
+    }
+}
+
+.img3 {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin-left: 30px;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng mượt */
+}
+
+.img3:hover {
+    transform: scale(1.02); /* Thu nhỏ 80% khi hover */
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+}
+
+.box1 {
+    flex-grow: 3 ;
+    flex-basis: 40%; /* Chiếm phần lớn */
+}
+.box2, .box3{
+    flex-grow: 2;
+    flex-basis: 25%; /* Chiếm phần lớn */
+  
+}   
+
+.img3, .img4, .img5 {
+    width: 100%; /* Hình ảnh co giãn theo box */
+    height: auto;
+}
+    
+h2 {
+    text-align: center;
+    color: #002147;
+}
+
+table {
+    margin: auto;
+}
+table, th, td {
+    width: 1000px;
+    border: 1px solid rgb(155, 154, 154);
+    border-collapse: collapse;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: left;
+    
+}
+
+th:nth-of-type(2), td:nth-of-type(2){
+    text-align: center;
+}
+
+td:nth-of-type(1) {
+    color: rgb(53, 50, 99);
+}
+
+.arrow_up {
+    color: green;
+    font-size: 10px;
+    text-align: center;
+}
+
+.arrow_down {
+    color: red;
+    font-size: 10px;
+    text-align: center;
+}
+
+.percent {
+    font-size: 11px;
+}
+
+tr:hover {
+    background-color: lightblue; /* Đổi màu khi click */
+}
+
+
+.text_2 {
+    background-color: #9bcaf1;
+    padding: 20px;
+    padding-bottom: 80px;
+    border-radius: 10px;
+    text-align: center;
+    width: 800px;
+    font-size: 15px;
+    margin: auto;
+        p, li{
+            text-align: left;
+        }
+        
+        h5 {
+            font-size: 20px;
+        }
+    
+}
+
+.icon {
+    width: 100% ;
+    display: flex;
+    gap: 100px;
+    position: relative;
+    left: 100px;
+}
+
+
+
